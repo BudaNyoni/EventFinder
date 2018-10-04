@@ -1,0 +1,77 @@
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul li a{
+    text-align: center;
+}
+
+
+li a:hover {
+    background-color: #111;
+} */
+.head{
+    background-color: rgba(122, 90, 41, 0.705);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    box-shadow: 2px 2px 4px;
+}
+.sec{
+    box-shadow: 2px 2px 4px 1px;
+    /* border-radius: 12px; */
+    margin-left:360px;
+    margin-right: 360px;
+    background-color: rgba(105, 105, 105, 0.377);
+    margin-top: 0px;
+    /* position: fixed; */
+    /* height: 90px; */
+}
+.contain{
+    text-align: center;
+    justify-content: center
+}
+h2{
+    background-color:rgba(122, 90, 41, 0.705);
+    padding: 5px;
+    border-radius: 5px; 
+    margin-left:100px;
+    margin-right: 100px;
+}
+.item5{
+   /* margin: 20px; */
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 8px;
+
+    /* margin-bottom:0; */
+    /* margin-top: 0 ; */
+}
+.item{
+    /* box-shadow: 2px 2px 3px; */
+    padding: 8px;
+    border-radius: 5px;
+}
+/* .item, a{
+margin-left: 20px;
+} */
+h3{
+    margin-left: 20px;
+}
