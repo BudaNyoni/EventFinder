@@ -1,5 +1,5 @@
-<br>
-<body class="animated slideInUp delay-2s">
+
+<body class="bg" >
 
 
 
@@ -12,29 +12,46 @@
   <br>
   <section class="sec">
     <br>
-    
+    <div *ngFor="let i of person | async">
+    <p></p>
+  
   <form >
       <div align="center">
           <h2>Event Details</h2>
         </div>
         <br>
     <div class="contain">
-  <h3>   <input class="item1" placeholder = "Name of Event" type="text"></h3>
-  <h3>   <input class="item2" placeholder = "Description" type="text"/> </h3>
-  <h3><input class="item3" placeholder = "Line Up" type="text"/></h3>  
-  <h3> <input class="item" placeholder = "Date" type="text"/></h3>   
-  <p><label for="item4">Start-Time: </label> <input class="item" placeholder = "Name" type="time"></p>
-  <p><label for="item5">End-Time: </label> <input class="item5" placeholder = "Name" type="time"></p>
-  <h3><input class="item6" placeholder = "Location" type="text"> </h3>
-  <h3><input class="item7" placeholder = "Entrance fee" type="text" ></h3>
+  <h3><input #eventName class="item1" placeholder = "Name of Event" type="text"></h3>
+  <h3><input #eventDesc class="item2" placeholder = "Description" type="text"/> </h3>
+  <h3><input  class="item3" placeholder = "Line Up" type="file" (change)="insertImg($event)"/></h3>  
+  <h3><input #date class="item" placeholder = "Date" type="text"/></h3>   
+  <p><label  for="item4">Start-Time: </label> <input #startTime class="item" placeholder = "Name" type="time"></p>
+  <p><label for="item5">End-Time: </label> <input  #endTime  class="item5" placeholder = "Name" type="time"></p>
+  <h3><input #location class="item6" type="text" placeholder = "Location" > </h3>
+  <h3><input #fee class="item7" placeholder = "Entrance fee" type="text" ></h3>
     </div>
   </form>
   <br>
   <br>
-  
+  <div align = "center" >
+  <button  class="butt" (click)="upload(eventName.value, eventDesc.value, date.value, startTime.value, endTime.value,location.value, fee.value, i.name)" >
+    <b> View Event</b>
+  </button>
+  </div>
+</div>
+  <br>
   </section>
+  <br>
+  <br>
+  <br>
+ 
 
-  
+  <br>
+  <br>
+<br>
+<br>
+<br>
+
   <footer class="foot">
 
   </footer>

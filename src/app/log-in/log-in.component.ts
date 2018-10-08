@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FirebaseService} from '../firebase.service';
+import { error } from 'util';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogInComponent implements OnInit {
 
-  constructor() { }
+  constructor(public fire:FirebaseService,private router: Router) { }
 
   ngOnInit() {
   }
-
+  login(email,pass){
+        
+   if (email != "" && pass != ""){
+     this.fire.login(email,pass).then(data =>{
+      this.router.navigate(['/upload-event'])
+     },error =>{
+        alert(error)
+     })
+   }
+  }
 }

@@ -1,3 +1,16 @@
-<p>
-  log-in works!
-</p>
+<body>
+  <section>
+    <div class="sec" align = "center" >
+      <br>
+      <br>
+    <form class="for">
+          Email:<br>
+          <input #email class="item" type="E-mail" name="firstname" ><br>
+         <br>
+          Password:<br>
+          <input #pass class="item" type="Password" name="lastname" ><br><br>
+        </form>
+        <button (click)="login(email.value, pass.value)">login</button>   
+    </div>
+  </section>
+</body>

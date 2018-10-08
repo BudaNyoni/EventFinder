@@ -1,12 +1,8 @@
 <br>
-
+<br>
+<br>
+<br>
 <body class="animated  slideInUp delay-2s">
-  <br>
-  <br>
-
-
-
-  <br>
   
   
   <section class="sec">
@@ -19,16 +15,21 @@
  <br>
     <div class="contain">
   
-  <h3><input class="item" placeholder = "Your Name" type="text"></h3> 
-  <h3><input class="item" placeholder = "Company" type="text"/> </h3>
-  <h3><input class="item" placeholder = "E-mail" type="text"/></h3>
-  <h3><input class="item" placeholder = "Password" type="text"/></h3>
+  <h3><input #name class="item" placeholder = "Your Name" type="text"></h3> 
+  <h3><input  #compName class="item" placeholder = "Company" type="text"/> </h3>
+  <h3><input #email class="item" placeholder = "E-mail" type="text"/></h3>
+  <h3><input #pass class="item" placeholder = "Password" type="password"/></h3>
    
 </div>
  </form>
   <br>
   <br>
-  
+  <div align = "center" >
+  <button class="butt" (click)="Register(name.value, compName.value, email.value, pass.value)">
+    <b>Register</b>
+  </button>
+</div>
+<br>
   </section>
 </body>
     

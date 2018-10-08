@@ -1,0 +1,24 @@
+.sec{
+    /* background-color:#8b104e; */
+    box-shadow: 2px 2px 4px 1px; 
+    height: 25vh;
+    margin-top: 60px;
+    margin-left: 360px;
+    margin-right: 360px;
+    /* width: 10px; */
+}
+.for{
+    top: 20px;
+}
+.butt{
+    background-color:#8b104e;
+    border-radius: 18px;
+    padding: 5px;
+    width: 100px; 
+}
+.item{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(212, 197, 197, 0.6);
+    color: white;
+}

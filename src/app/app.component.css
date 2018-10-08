@@ -1,3 +1,6 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+}
 /* ul {
     list-style-type: none;
     margin: 0;
@@ -22,7 +25,7 @@ li a {
 li a:hover {
     background-color: #111;
 } */
-body{
+/* body{
     background-position: fixed;
     background-image: url('../assets/Pics/6835100-landscape.jpg');
     background-size: cover;
@@ -30,9 +33,9 @@ body{
     background-repeat: no-repeat;
     height: 40vh;
   
-}
+} */
 .head{
-    background-color: rgba(122, 90, 41, 0.705);
+    background-color: #8b104e;
     margin-left: 100px;
     margin-right: 100px;
     padding: 5px;
@@ -46,7 +49,7 @@ nav{
     /* position: fixed; */
     width: 100%;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: #8b104e;
     margin-right: 5px;
     line-height: 50px;
     z-index: 99;
@@ -69,8 +72,9 @@ nav :active{
 }
 
 nav :hover{
-    background-color: rgba(122, 90, 41, 0.705);
+    background-color: #7a4579;
     transition: 0.2s;
-    padding: 15px;
+    padding: 12px;
+    box-shadow: 1px 1px 1px black;
     /* display: inline-block; */
 }
