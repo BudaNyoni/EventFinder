@@ -1,16 +1,32 @@
 <body>
+  <br>
+  <br>
+  <br>
+<div align = "center"  class="animated  slideInDown delay-2s">
+<img src="../../assets/fireworks (1).png" >
+<h1>Events App</h1>
+</div>
   <section>
-    <div class="sec" align = "center" >
-      <br>
+    <br>
+    <div id="sec" align = "center"  class="animated  slideInUp delay-2s" >
+   <br>
+      <h2>Sign In</h2>
       <br>
     <form class="for">
-          Email:<br>
-          <input #email class="item" type="E-mail" name="firstname" ><br>
+         <b>Email:</b> <br>
+          <input #email class="item" type="E-mail" name="Email" ><br>
          <br>
-          Password:<br>
-          <input #pass class="item" type="Password" name="lastname" ><br><br>
+           <b>Password:</b> <br>
+          <input #pass class="item" type="Password" name="password" ><br><br>
         </form>
-        <button (click)="login(email.value, pass.value)">login</button>   
+        <button  class="butt" (click)="login(email.value, pass.value)">
+         <b>Log In</b>
+        </button> 
+        <br>
+        <br>
+
     </div>
+    <br>
+    <br>
   </section>
 </body>

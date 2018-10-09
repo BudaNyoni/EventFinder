@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-view',
   templateUrl: './view.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { 
+
+  }
 
   ngOnInit() {
   }
-
+Event(){
+  this.router.navigate(['/event'])
+}
 }

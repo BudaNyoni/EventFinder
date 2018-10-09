@@ -1,9 +1,16 @@
-<body class="animated  slideInUp delay-2s">
+<nav class="animated slideInLeft delay-2s">
+  <!-- <a routerLink="log-in" class="animated bounce delay-2s">Home</a>
+ <a routerLink="register" class="animated slideInLeft delay-2s">Home</a> -->
+ <a routerLink="event" class="animated bounce delay-2s">View Events</a>
+ <a routerLink="view" class="animated bounce delay-2s">Event</a>
+</nav>  
+<router-outlet></router-outlet> 
+<body >
   <br>
   <br>
   <br>
  
-  <section>
+  <section class="animated  slideInUp delay-2s">
     <div class="contain" align = "center">
       <img src="../../assets/eventpic.jpg" ><br>
 <!-- <div class="cont">Event Name<br>
@@ -11,7 +18,7 @@
 <label>Date and Time</label>
 </div> -->
 
-<button class="butt"  routerLink = '/register'>
+<button class="butt"  (click)="Event()">
   <b> View Event</b>
 </button>
     </div>

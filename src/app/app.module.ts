@@ -10,10 +10,9 @@ import {AngularFireModule} from  'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule}  from 'angularfire2/auth';
 import {AngularFireStorageModule} from 'angularfire2/storage';
-// import {ToasterServiceService} from './toaster-service.service';
-// import {ToastModule} from 'ng2-toastr/ng2-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import { RegisterBusinessPage } from 'eventApp/src/pages/business/register-business/register-business';
+import { EventComponent } from './event/event.component';
+
 
 var config = {
   apiKey: "AIzaSyD2Pk_6rvhQdp-TqwU5BICiDdaQq5JJUyA",
@@ -23,11 +22,13 @@ var config = {
   storageBucket: "eventapp-a1624.appspot.com",
   messagingSenderId: "1061940915999"
 };
+
 const appRoutes: Routes = [
   { path: 'register', component:RegisterComponent },
   { path: 'upload-event', component: UploadEventComponent },
   { path: 'view', component:ViewComponent },
-  { path: 'log-in', component:LogInComponent }
+  { path: 'log-in', component:LogInComponent },
+  { path: 'event', component:EventComponent }
 ];
 
 @NgModule({
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     RegisterComponent,
     ViewComponent,
     LogInComponent,
+    EventComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(config),

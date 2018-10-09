@@ -1,3 +1,11 @@
+body{
+    background-image:url('../../assets/city-dark-dawn-248159.jpg');
+    background-size: cover;
+    position: center top;
+    height:100vh;
+    background-repeat: no-repeat;
+
+}
 img{
     /* box-shadow: 2px 2px 4px; */
     /* background-image:linear-gradient(#F53D4E,#1e2a78), url('../../assets/imgs/video.jpg');   */
@@ -7,17 +15,19 @@ img{
     /* margin-left:100px;
     margin-right: 100px; */
     padding: 20px;
-    height: 40vh;
-    width: 50vh;
+    height: 35vh;
+    width: 25vh;
     background-attachment: fixed;
 
 }
 .contain{
-  margin-left: 460px;
-  margin-right: 460px;
+    margin-left: 460px;
+    margin-top: 260px;
+    margin-right: 460px;
     background-size: contain;
     position: relative;
     text-align: center;
+    background-color: whitesmoke;
     /* border: 3px solid gold; */
     padding: 10px;
     box-shadow: 2px 2px 4px 1px;
