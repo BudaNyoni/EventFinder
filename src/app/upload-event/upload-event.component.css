@@ -26,7 +26,7 @@ li a:hover {
     background-color: #111;
 } */
 body{
-    background-image:url("../../assets/city-dark-dawn-248159.jpg");
+    background-image:linear-gradient(rgba(51, 38, 38, 0.568), rgba(32, 32, 32, 0.616),rgba(155, 155, 155, 0.712)),url("../../assets/img_0379.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -51,17 +51,23 @@ body{
     margin-right: 360px;
     position: relative;
     margin-top: 100px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.822);
     /* position: fixed; */
     /* height: 90px; */
 }
 .butt{
-    background-color:#8b104e;
+    background-color:#7a4579;
     padding: 15px;
     width: 150px;
     color: white;
     border-radius: 12px;
  }
+ button :hover{
+    background-color: #7a4579;
+    transition: 0.4s;
+    padding: 20px;
+    box-shadow: inset 2px 2px 4px black;
+}
 footer.foot{
     border-top: 1px solid #4d4e50;
     /* background-color: #8b104e; */
@@ -84,13 +90,13 @@ footer.foot{
    /* margin: 20px; */
     margin-left: 5px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 
     /* margin-bottom:0; */
     /* margin-top: 0 ; */
 }
 h2{
-    background-color:#8b104e;
+    background-color:#7a4579;
     padding: 5px;
     border-radius: 5px; 
     margin-left:100px;
@@ -101,37 +107,45 @@ h2{
 .item1{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
+    width: 300px;
     border-radius: 5px;
 }
 .item2{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
+    width: 300px;
     border-radius: 5px;
 }
+
 .item3{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
+    width: 300px;
 }
 .item4{
     /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
+    width: 300px;
 }
 .item6{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
+    width: 300px;
 }
 .item7{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
+    width: 300px;
 }
 .item{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
+    width: 300px;
 }
 /* .item, a{
 margin-left: 20px;
@@ -140,10 +154,10 @@ h3{
     margin-left: 20px;
 }
 nav{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     height: 50px;
-    background-color: #8b104e;
+    background-color: #7a457996;
     margin-right: 5px;
     line-height: 50px;
     z-index: 99;

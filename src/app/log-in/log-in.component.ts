@@ -18,7 +18,10 @@ export class LogInComponent implements OnInit {
         
    if (email != "" && pass != ""){
      this.fire.login(email,pass).then(data =>{
-      this.router.navigate(['/upload-event'])
+      this.fire.getuser().then((data:any) =>{
+        this.router.navigate(['/upload-event'])
+      })
+     
      },error =>{
         alert(error)
      })

@@ -113,6 +113,7 @@ export class FirebaseService {
             date: date,
             startTIme: startTIme,
             endTIme: endTIme,
+            going: 0,
             location:location,
             fee: fee,
             img: img

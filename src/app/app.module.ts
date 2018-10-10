@@ -22,7 +22,6 @@ var config = {
   storageBucket: "eventapp-a1624.appspot.com",
   messagingSenderId: "1061940915999"
 };
-
 const appRoutes: Routes = [
   { path: 'register', component:RegisterComponent },
   { path: 'upload-event', component: UploadEventComponent },

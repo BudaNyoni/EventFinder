@@ -36,7 +36,7 @@ person : Observable<string | null>;
     //   console.log(data)
       this.fire.addEvent(eventName, eventDesc, this.url, date, startTime, endTime, location, fee, name).then(data =>{
         console.log(data)
-
+        alert("event added");
       })
     //})
   }

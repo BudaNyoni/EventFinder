@@ -20,6 +20,7 @@ export class RegisterComponent implements OnInit {
       // this.toasterService.Seccess("Registerd", )
         console.log(data)
         this.router.navigate(['/upload-event'])
+        alert("User added");
       }, error =>{
         alert(error)
       })

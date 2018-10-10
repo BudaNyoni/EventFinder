@@ -1,6 +1,7 @@
 
 body{
-    background-image:url('../../assets/city-dark-dawn-248159.jpg');
+    background-image:linear-gradient(rgba(51, 38, 38, 0.568), rgba(32, 32, 32, 0.616),rgba(155, 155, 155, 0.712)),url("../../assets/img_0381.jpg");
+    background-attachment: fixed;
     background-size: cover;
     position: center top;
     height:100vh;
@@ -32,10 +33,10 @@ img{
     border-radius: 12px;
     padding: 10px;
     box-shadow:  5px 10px 8px black;
-    background-color: #8b104e;
+    background-color: #7a4579;
 }
 .butt{
-    background-color:#8b104e;
+    background-color:#7a4579;
     border-radius: 18px;
     padding: 15px;
     bottom: 40px;
@@ -43,7 +44,7 @@ img{
     width: 100px; 
 }
 h2{
-    background-color:#8b104e;
+    background-color:#7a4579;
     padding: 5px;
     color: white;
     border-radius: 5px; 
@@ -54,9 +55,9 @@ h2{
 .item{
     /* border-radius: 20px; */
     
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.973);
     border-radius: 5px;
     padding: 10px;
-width: 180px;
+width: 280px;
     color: black;
 }

@@ -1,15 +1,49 @@
-<nav class="animated slideInLeft delay-2s">
-  <a routerLink="log-in" class="animated bounce delay-2s">Home</a>
- <a routerLink="register" class="animated slideInLeft delay-2s">Home</a>
- <a routerLink="upload-event" class="animated bounce delay-2s">Upload</a>
- <a routerLink="view" class="animated bounce delay-2s">Events</a>
-</nav>  
-<router-outlet></router-outlet> 
-<body>
-  
-  <section>
-    <div cl>
 
-    </div>
+<!-- <body class="animated fadeInDown delay-2s">
+  <nav class="animated slideInDown delay-2s">
+    <a routerLink="/log-in" class="animated bounce delay-2s">Home</a>
+    <a routerLink="/upload-event" class="animated bounce delay-2s">home</a>
+   <a routerLink="/view" class="animated bounce delay-2s">Events</a>
+   <a routerLink="/event" class="animated slideInLeft delay-2s">View</a>
+ </nav>  
+  <router-outlet></router-outlet> 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <section class="animated  slideInUp delay-2s">
+
+        <form >
+           
+          <div id="contain" >
+<br>
+              <div align="center">
+                  <h2>Edit Event Details</h2>
+                </div>
+                <br>
+        <h3><input #eventName class="item1" placeholder = "Name of Event" type="text"></h3>
+        <h3><textarea  placeholder="Describe" rows="4" cols="50" #eventDesc class="item2" type="text"> </textarea></h3>
+        <h3><input  class="item3" placeholder = "Line Up" type="file" (change)="insertImg($event)"/></h3>  
+        <h3><input #date class="item" placeholder = "Date" type="date"/></h3>   
+        <p><label  for="item4">Start-Time: </label> <input #startTime class="item5" placeholder = "Name" type="time"></p>
+        <p><label for="item5">End-Time: </label> <input  #endTime  class="item5" placeholder = "Name" type="time"></p>
+        <h3><input #location class="item6" type="text" placeholder = "Location" > </h3>
+        <h3><input #fee class="item7" placeholder = "Entrance fee" type="text" ></h3>
+        <br>
+
+        <div align="center">
+
+                <b>UpDate</b>
+               </button> 
+              </div>
+              <br>
+          </div>
+
+
+             
+        </form>
+ 
   </section>
-</body>
+</body> -->
