@@ -1,24 +1,14 @@
 
-<!-- <body class="animated fadeInDown delay-2s">
+<body class="animated fadeInDown delay-2s">
   <nav class="animated slideInDown delay-2s">
-    <a routerLink="/log-in" class="animated bounce delay-2s">Home</a>
     <a routerLink="/upload-event" class="animated bounce delay-2s">home</a>
    <a routerLink="/view" class="animated bounce delay-2s">Events</a>
-   <a routerLink="/event" class="animated slideInLeft delay-2s">View</a>
  </nav>  
   <router-outlet></router-outlet> 
-<br>
-<br>
-<br>
-<br>
-<br>
 
-  <section class="animated  slideInUp delay-2s">
-
-        <form >
            
-          <div id="contain" >
-<br>
+          <!-- <div id="contain" >
+
               <div align="center">
                   <h2>Edit Event Details</h2>
                 </div>
@@ -36,14 +26,15 @@
         <div align="center">
 
                 <b>UpDate</b>
-               </button> 
               </div>
               <br>
-          </div>
+          </div> -->
 
-
-             
-        </form>
- 
-  </section>
-</body> -->
+          <section class="animated  slideInUp delay-2s">
+              <div *ngFor="let i of event | async" >
+            <div class="contain" align = "center">
+              <img src="{{i.img}}" ><br>
+        </div>
+            </div>
+          </section>
+</body>

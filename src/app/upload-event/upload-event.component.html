@@ -1,9 +1,9 @@
+<div *ngFor="let i of person | async">
 <body id="bg" class="animated fadeInDown delay-2s" >
  <nav class="animated slideInDown delay-2s">
     <!-- <a routerLink="/log-in" class="animated bounce delay-2s">Home</a> -->
     <a routerLink="/upload-event" class="animated bounce delay-2s">home</a>
-   <a routerLink="/view" class="animated bounce delay-2s">Events</a>
-   <a routerLink="/register" class="animated slideInLeft delay-2s">View</a>
+   <a (click)="test(i.name)" class="animated bounce delay-2s">Events</a>
  </nav>  
   <router-outlet></router-outlet> 
 
@@ -19,7 +19,7 @@
   <br>
   <section id="sec" class="animated  slideInUp delay-2s">
     <br>
-    <div *ngFor="let i of person | async">
+
     <p></p>
   
   <form >
@@ -45,13 +45,13 @@
     <b> View Event</b>
   </button>
   </div>
-</div>
+
   <br>
   </section>
   <br>
   <br>
   <br>
- 
+
 
   <br>
   <br>
@@ -65,5 +65,6 @@
    -->
     
   </body>
+</div>
 
     

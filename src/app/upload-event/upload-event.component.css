@@ -32,6 +32,8 @@ body{
     background-repeat: no-repeat;
     position: center;
     height:100vh;
+    margin: 0; 
+    padding: 0;
   
 
 }
@@ -50,7 +52,7 @@ body{
     margin-left:360px;
     margin-right: 360px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 90px;
     background-color: rgba(245, 245, 245, 0.822);
     /* position: fixed; */
     /* height: 90px; */

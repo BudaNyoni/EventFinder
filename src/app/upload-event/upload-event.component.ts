@@ -40,5 +40,7 @@ person : Observable<string | null>;
       })
     //})
   }
-
+  test(username){
+    this.router.navigate(['/view', {name:username}]);
+  }
 }

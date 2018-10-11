@@ -26,7 +26,7 @@ const appRoutes: Routes = [
   { path: 'register', component:RegisterComponent },
   { path: 'upload-event', component: UploadEventComponent },
   { path: 'view', component:ViewComponent },
-  { path: 'log-in', component:LogInComponent },
+  { path: '', component:LogInComponent },
   { path: 'event', component:EventComponent }
 ];
 

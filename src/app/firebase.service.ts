@@ -13,6 +13,7 @@ import { promise, Key } from 'protractor';
 export class FirebaseService {
   userRef: AngularFireList<any>;
   events: Observable<any[]>
+  event: Observable<any[]>
   profileUrl;
   currentName;
   state;
@@ -21,6 +22,7 @@ export class FirebaseService {
   }
  
   getAuthState(){
+    //this.authen.auth.signOut();
     return new Promise ((accpt, rej) =>{ 
       this.authen.auth.onAuthStateChanged(user =>{
         if (user){
@@ -38,7 +40,6 @@ export class FirebaseService {
     return new Promise ((accpt, rej)=>{
       this.authen.auth.createUserWithEmailAndPassword(email,passw).then(() =>{
         this.authen.authState.subscribe(data =>{
-          var userId =  data.uid;
           var dbPath =  'users/' + data.uid ; 
           this.userRef = this.db.list(dbPath);
           this.userRef.push({
@@ -76,18 +77,6 @@ export class FirebaseService {
       })
     })
   }
-
-  // getdownloadURL(name2){
-  //   return new Promise ((accpt, rej) =>{
-  //     var name = 'name'
-  //     const ref = this.storage.ref('pictures/' + name);
-  //     this.profileUrl = ref.getDownloadURL();
-  //     console.log(this.profileUrl.snapshotChanges)
-  //     //accpt(this.profileUrl)
-  //   })
-  // }
-
-
   getuser(){
     return new Promise ((accpt, rej) =>{ 
       this.authen.authState.subscribe(data =>{
@@ -123,29 +112,27 @@ export class FirebaseService {
   }
 
   viewEvent(name){
+    this.events =  null;
     return new Promise ((accpt, rej) =>{ 
       this.authen.authState.subscribe(data =>{
         var dbPath = 'events/' + name;  
          this.userRef = this.db.list(dbPath);
          this.events = this.userRef.snapshotChanges().pipe(
          map(changes => 
-         changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))));
+         changes.map(c => ({ key: c.payload.key, ...c.payload.val()}))));
           accpt (this.events);
         });
      })
   } 
 
-
-    // return new Promise ((accpt, rej) =>{ 
-    //   this.authen.authState.subscribe(data =>{
-    //     var dbPath = 'events/' + this.currentName;  
-    //      this.userRef = this.db.list(dbPath);
-    //      this.events = this.userRef.snapshotChanges().pipe(
-    //      map(changes => 
-    //      changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))));
-    //       accpt (this.events);
-    //     });
-    //  })
-    
-
+viewSpecificEvent(name,key){
+  this.event =  null;
+return new Promise ((accpt, rej) =>{
+  var dbPath = 'events/' + name + '/' + key;
+   this.userRef = this.db.list(dbPath, ref => ref.orderByChild('size').equalTo('large'))
+console.log(this.userRef)
+// accpt(this.event)
+})
+}
+  
 }

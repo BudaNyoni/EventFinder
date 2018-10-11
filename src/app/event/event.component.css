@@ -1,114 +1,56 @@
 body{
-    background-image:linear-gradient(rgba(29, 21, 21, 0.5), rgba(0,0,0,0.5),rgba(143, 143, 143, 0.5)),url("../../assets/img_0387.jpg");
+    background-image:linear-gradient(rgba(29, 21, 21, 0.5), rgba(0,0,0,0.5),rgba(143, 143, 143, 0.5)),url("../../assets/SGTower-1709.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    position:center;
     height:100vh;
-  
+    background-repeat: no-repeat;
 
 }
-.head{
-    background-color: rgba(122, 110, 41, 0.705);
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 5px;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    box-shadow: 2px 2px 4px;
+img{
+    /* box-shadow: 2px 2px 4px; */
+    /* background-image:linear-gradient(#F53D4E,#1e2a78), url('../../assets/imgs/video.jpg');   */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    /* margin-left:100px;
+    margin-right: 100px; */
+    padding: 20px;
+    height: 35vh;
+    width: 25vh;
+    background-attachment: fixed;
+
 }
-#sec{
-    box-shadow: 2px 2px 4px 1px;
-    /* border-radius: 12px; */
-    margin-left:360px;
-    margin-right: 360px;
+.contain{
+    margin-left: 560px;
+    margin-top: 260px;
+    margin-right: 560px;
+    background-size: contain;
     position: relative;
-    margin-top: 100px;
-    background-color: rgba(245, 245, 245, 0.781);
-    /* position: fixed; */
-    /* height: 90px; */
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.856);
+    /* border: 3px solid gold; */
+    padding: 10px;
+    box-shadow: 2px 2px 4px 1px;
+    border-radius: 15px;
+    /* height: 100vh; */
 }
 .butt{
-    background-color:#7a4579;
-    padding: 15px;
-    width: 150px;
-    color: white;
-    border-radius: 12px;
- }
-#contain{
-    /* margin-top: 100px; */
-    margin-left: 520px;
-    margin-right: 520px;
-    text-align: center;
- justify-content: center;
-background-color: rgba(245, 245, 245, 0.774);
- box-shadow: 2px 2px 3px;
+   background-color:#7a4579;
+   padding: 10px;
+   width: 150px;
+   border-radius: 12px;
 }
-.item5{
-   /* margin: 20px; */
-    margin-left: 5px;
-    border-radius: 5px;
-    padding: 10px;
-
-    /* margin-bottom:0; */
-    /* margin-top: 0 ; */
+b{
+    color: whitesmoke;
 }
-h2{
-    background-color:#7a4579;
-    padding: 5px;
-    border-radius: 5px; 
-    margin-left:100px;
-    color: white;
-    margin-right: 100px;
-    box-shadow: 2px 2px 4px black ;
-}
-.item1{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-}
-.item2{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-}
-
-.item3{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-}
-.item4{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-}
-.item6{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-}
-.item7{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-}
-.item{
-    /* box-shadow: 2px 2px 3px; */
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
-}
-/* .item, a{
-margin-left: 20px;
-} */
-h3{
-    margin-left: 20px;
+.cont{
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
 }
 nav{
     position: fixed;
@@ -132,10 +74,9 @@ nav a {
     
 
 }
-nav a:active{
+nav :active{
     background-color: rgba(122, 90, 41, 0.705);
 }
-
 
 nav :hover{
     background-color: #7a4579;
@@ -143,9 +84,4 @@ nav :hover{
     padding: 12px;
     box-shadow: 1px 1px 1px black;
     /* display: inline-block; */
-}
-.butt :hover{
-    background-color: #7a4579;
-    transition: 0.2s;
-    box-shadow: 2px 2px 4px black;
 }
