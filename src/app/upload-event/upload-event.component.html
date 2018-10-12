@@ -1,7 +1,7 @@
 <div *ngFor="let i of person | async">
 <body id="bg" class="animated fadeInDown delay-2s" >
  <nav class="animated slideInDown delay-2s">
-    <!-- <a routerLink="/log-in" class="animated bounce delay-2s">Home</a> -->
+    <a routerLink="/log-in" class="animated bounce delay-2s">Log-in</a>
     <a routerLink="/upload-event" class="animated bounce delay-2s">home</a>
    <a (click)="test(i.name)" class="animated bounce delay-2s">Events</a>
  </nav>  
@@ -29,19 +29,31 @@
         <br>
     <div class="contain">
   <h3><input #eventName class="item1" placeholder = "Name of Event" type="text"></h3>
-  <h3><textarea  placeholder="Describe" rows="4" cols="50" #eventDesc class="item2" type="text"> </textarea></h3>
+ <br>
+ <p>Description</p>
+  <h3><textarea  placeholder="Describe..." rows="4" cols="50" #eventDesc class="item2" type="text"> </textarea></h3>
+  <br>
   <h3><input  class="item3" placeholder = "Line Up" type="file" (change)="insertImg($event)"/></h3>  
-  <h3><input #date class="item" placeholder = "Date" type="date"/></h3>   
-  <p><label  for="item4">Start-Time: </label> <input #startTime class="item5" placeholder = "Name" type="time"></p>
+  <br>
+  <p>From</p>
+  <h3><input #date class="item" placeholder = "Start-Date" type="date"/></h3>   
+  <br>
+  <p>Till</p>
+  <h3><input #enddate class="item" placeholder = "End-Date" type="date"/></h3>
+  <br>
+  <p><label  for="item4">Start-Time:</label> <input #startTime class="item5" placeholder = "Name" type="time"></p>
+  <br>
   <p><label for="item5">End-Time: </label> <input  #endTime  class="item5" placeholder = "Name" type="time"></p>
+  <br>
   <h3><input #location class="item6" type="text" placeholder = "Location" > </h3>
+  <br>
   <h3><input #fee class="item7" placeholder = "Entrance fee" type="text" ></h3>
     </div>
   </form>
   <br>
   <br>
   <div align = "center" >
-  <button  class="butt" (click)="upload(eventName.value, eventDesc.value, date.value, startTime.value, endTime.value,location.value, fee.value, i.name)" >
+  <button  class="butt" (click)="upload(eventName.value, eventDesc.value, date.value, startTime.value, endTime.value,location.value, fee.value, i.name, enddate.value)" >
     <b> View Event</b>
   </button>
   </div>

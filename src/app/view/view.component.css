@@ -3,7 +3,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     position:center;
-    height:100vh;
+    height:600vh;
     background-repeat: no-repeat;
 
 }
@@ -22,12 +22,13 @@ img{
 
 }
 .contain{
-    margin-left: 560px;
-    margin-top: 260px;
-    margin-right: 560px;
-    background-size: contain;
+    margin-left: 360px;
+    margin-top: 90px;
+    margin-right: 360px;
+    /* background-size: cover; */
     position: relative;
     text-align: center;
+    justify-content: center;
     background-color: rgba(245, 245, 245, 0.856);
     /* border: 3px solid gold; */
     padding: 10px;

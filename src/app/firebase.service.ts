@@ -5,6 +5,7 @@ import {AngularFireStorage} from  'angularfire2/storage'
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { promise, Key } from 'protractor';
+import { eventNames } from 'cluster';
 
 
 @Injectable({
@@ -91,7 +92,7 @@ export class FirebaseService {
      })
   }
 
-  addEvent(name,desc, img, date, startTIme, endTIme, location, fee, busName){
+  addEvent(name,desc, img, date, startTIme, endTIme, location, fee, busName, enddate){
     this.currentName = busName;
     return new Promise ((accpt, rej)=>{
           var dbPath = 'events/' + this.currentName; 
@@ -105,12 +106,25 @@ export class FirebaseService {
             going: 0,
             location:location,
             fee: fee,
-            img: img
-          });   
+            img: img,
+            endDate : enddate,
+            comments : 0
+          })  
+       
           accpt('added')      
     })
   }
-
+    addNewNotification(date, eveName, img){
+      console.log('woza notification')
+      var dbPath = 'NewEvents/';
+      var userRef = this.db.list(dbPath);
+        userRef.push({
+          date : date,
+          name :  this.currentName,
+          eventName :eveName, 
+          img : img
+      })
+    }
   viewEvent(name){
     this.events =  null;
     return new Promise ((accpt, rej) =>{ 

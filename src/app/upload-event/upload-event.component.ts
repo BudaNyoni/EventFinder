@@ -31,13 +31,15 @@ person : Observable<string | null>;
   
     }
   }
-  upload(eventName,eventDesc,date,startTime,endTime,location,fee, name){
+  upload(eventName,eventDesc,date,startTime,endTime,location,fee, name, enddate){
     // this.fire.addEventPicture(this.url).then(data =>{
     //   console.log(data)
-      this.fire.addEvent(eventName, eventDesc, this.url, date, startTime, endTime, location, fee, name).then(data =>{
+      this.fire.addEvent(eventName, eventDesc, this.url, date, startTime, endTime, location, fee, name, enddate).then(data =>{
         console.log(data)
+
         alert("event added");
       })
+      this.fire.addNewNotification(date,eventName,this.url)
     //})
   }
   test(username){

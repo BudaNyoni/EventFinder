@@ -11,7 +11,8 @@
   <br>
  
   <section class="animated  slideInUp delay-2s">
-      <div *ngFor="let i of events | async" >
+    <ul  *ngFor="let i of events | async">
+      <li>
     <div class="contain" align = "center">
       <img src="{{i.img}}" ><br>
 <!-- <div class="cont">Event Name<br>
@@ -22,6 +23,8 @@
   <b> View Event</b>
 </button>
 </div>
-    </div>
+</li>
+  </ul>
   </section>
+
 </body>

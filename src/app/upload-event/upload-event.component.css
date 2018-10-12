@@ -31,7 +31,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: center;
-    height:100vh;
+    height:200vh;
     margin: 0; 
     padding: 0;
   
@@ -52,6 +52,7 @@ body{
     margin-left:360px;
     margin-right: 360px;
     position: relative;
+    font-size: 20px;
     margin-top: 90px;
     background-color: rgba(245, 245, 245, 0.822);
     /* position: fixed; */
@@ -95,6 +96,7 @@ footer.foot{
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 3px;
+    position: relative;
 
     /* margin-bottom:0; */
     /* margin-top: 0 ; */
@@ -114,12 +116,14 @@ h2{
     width: 300px;
     margin-bottom: 3px;
     border-radius: 5px;
+    position: relative;
 }
 .item2{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     width: 300px;
     border-radius: 5px;
+    position: relative;
 }
 
 .item3{
@@ -127,30 +131,35 @@ h2{
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    position: relative;
 }
 .item4{
     /* box-shadow: 2px 2px 3px; */
     padding: 5px;
     border-radius: 5px;
     width: 300px;
+    position: relative;
 }
 .item6{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    position: relative;
 }
 .item7{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    position: relative;
 }
 .item{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    position: relative;
 }
 /* .item, a{
 margin-left: 20px;
