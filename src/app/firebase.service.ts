@@ -92,7 +92,7 @@ export class FirebaseService {
      })
   }
 
-  addEvent(name,desc, img, date, startTIme, endTIme, location, fee, busName, enddate){
+  addEvent(name,desc, img, date, startTIme, endTIme, location, fee, busName, enddate, img2){
     this.currentName = busName;
     return new Promise ((accpt, rej)=>{
           var dbPath = 'events/' + this.currentName; 
@@ -107,6 +107,7 @@ export class FirebaseService {
             location:location,
             fee: fee,
             img: img,
+            hostImg : img2,
             endDate : enddate,
             comments : 0
           })  
@@ -114,14 +115,14 @@ export class FirebaseService {
           accpt('added')      
     })
   }
-    addNewNotification(date, eveName, img){
-      console.log('woza notification')
+    addNewNotification(date, Name, img, name){
+      console.log(Name)
       var dbPath = 'NewEvents/';
       var userRef = this.db.list(dbPath);
         userRef.push({
           date : date,
-          name :  this.currentName,
-          eventName :eveName, 
+          name :  name,
+          eventName: Name, 
           img : img
       })
     }
