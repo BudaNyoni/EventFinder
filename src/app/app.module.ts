@@ -15,13 +15,14 @@ import { EventComponent } from './event/event.component';
 
 
 var config = {
-  apiKey: "AIzaSyD2Pk_6rvhQdp-TqwU5BICiDdaQq5JJUyA",
-  authDomain: "eventapp-a1624.firebaseapp.com",
-  databaseURL: "https://eventapp-a1624.firebaseio.com",
-  projectId: "eventapp-a1624",
-  storageBucket: "eventapp-a1624.appspot.com",
-  messagingSenderId: "1061940915999"
+  apiKey: "AIzaSyCu3A43YaFtq4bSGfUCf2OmUzNh572wQFk",
+  authDomain: "eventapp-9e887.firebaseapp.com",
+  databaseURL: "https://eventapp-9e887.firebaseio.com",
+  projectId: "eventapp-9e887",
+  storageBucket: "eventapp-9e887.appspot.com",
+  messagingSenderId: "802307699081"
 };
+
 const appRoutes: Routes = [
   { path: 'register', component:RegisterComponent },
   { path: 'upload-event', component: UploadEventComponent },

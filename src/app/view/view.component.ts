@@ -22,7 +22,7 @@ events : Observable<string|null>
    })
   }
   Event(x){
-    this.router.navigate(['/event', {name:this.username, key:x}]);
+    this.router.navigate(['/events', {name:this.username, key:x}]);
   }
 
 }
