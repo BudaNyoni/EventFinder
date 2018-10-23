@@ -202,12 +202,42 @@ nav :hover{
 }
 @media (max-width:600px){
 body{
-    height: 50vh;
-    width: 20vh;
-    background-color: blue;
+   
+    width: 50vh;
+    background-size: cover;
 }
 
 }
-@media(min-width){
-
+@media(max-width:800px){
+.item1{
+    width: 100px;
+    padding: 5px;
 }
+
+.item2{
+    width: 100px;
+    padding: 5px;
+}
+
+.item3{
+    width: 100px;
+    padding: 5px;
+}
+
+.item4{
+    width: 100px;
+    padding: 5px;
+}
+
+.item5{
+    width: 100px;
+    padding: 5px;
+}
+}
+@media(min-width:600px){
+h2{
+    font-size: 2.5em;
+}
+}
+
+

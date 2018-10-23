@@ -15,12 +15,12 @@ import { EventComponent } from './event/event.component';
 
 
 var config = {
-  apiKey: "AIzaSyCu3A43YaFtq4bSGfUCf2OmUzNh572wQFk",
-  authDomain: "eventapp-9e887.firebaseapp.com",
-  databaseURL: "https://eventapp-9e887.firebaseio.com",
-  projectId: "eventapp-9e887",
-  storageBucket: "eventapp-9e887.appspot.com",
-  messagingSenderId: "802307699081"
+  apiKey: "AIzaSyDC_zhhsSv9DZQV6cuJlUf9lHDiSKPo8P8",
+  authDomain: "eventsfinder-e75f2.firebaseapp.com",
+  databaseURL: "https://eventsfinder-e75f2.firebaseio.com",
+  projectId: "eventsfinder-e75f2",
+  storageBucket: "",
+  messagingSenderId: "457482937614"
 };
 
 const appRoutes: Routes = [
