@@ -19,9 +19,9 @@ var config = {
   authDomain: "eventsfinder-e75f2.firebaseapp.com",
   databaseURL: "https://eventsfinder-e75f2.firebaseio.com",
   projectId: "eventsfinder-e75f2",
-  storageBucket: "",
+  storageBucket: "eventsfinder-e75f2.appspot.com",
   messagingSenderId: "457482937614"
-};
+}
 
 const appRoutes: Routes = [
   { path: 'register', component:RegisterComponent },

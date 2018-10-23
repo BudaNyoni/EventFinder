@@ -200,44 +200,66 @@ nav :hover{
     box-shadow: 1px 1px 1px black;
     /* display: inline-block; */
 }
-@media (max-width:600px){
+@media (max-width:130vh){
 body{
    
-    width: 50vh;
+    width: 120vh;
+    height: 200vh;
     background-size: cover;
+    background-position: center;
 }
 
 }
-@media(max-width:800px){
+@media(max-width:120vh){
 .item1{
-    width: 100px;
+    width: 160px;
     padding: 5px;
 }
 
 .item2{
-    width: 100px;
+    width: 160px;
     padding: 5px;
 }
 
 .item3{
-    width: 100px;
+    width: 160px;
     padding: 5px;
 }
 
-.item4{
-    width: 100px;
+/* .item4{
+    width: 120px;
     padding: 5px;
 }
 
 .item5{
-    width: 100px;
+    width: 120px;
+    padding: 5px;
+} */
+.item{
+    width: 160px;
+    padding: 5;
+}
+.item6{
+    width: 160px;
     padding: 5px;
 }
+.item7{
+    width: 160px;
+    padding: 5px;
 }
-@media(min-width:600px){
+p{
+    font-size: 10px;
+}
+#sec{
+    text-align: center;
+  margin-left: 100px;
+  height: 110vh;
+  width: 130vw;
+}
 h2{
-    font-size: 2.5em;
+    font-size: 12px;
 }
 }
+
 
 

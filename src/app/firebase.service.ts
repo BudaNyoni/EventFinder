@@ -70,6 +70,11 @@ export class FirebaseService {
     })
   }
 
+  logout(){
+    console.log('exit')
+    this.authen.auth.signOut();
+  }
+  
   addEventPicture(url){
     return new Promise ((accpt, rej) =>{
       var name = 'name'
