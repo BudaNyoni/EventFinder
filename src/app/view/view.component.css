@@ -23,6 +23,19 @@ img{
     background-attachment: fixed;
 
 }
+.pic{
+    margin-bottom: 30px;
+    height: 90px;
+    width: 90px;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow:  2px 5px 3px black;
+    background-color: #7a4579;
+}
+.logo{
+    margin-top: 50px;
+    color: whitesmoke;
+}
 .contain{
     margin-left: 360px;
     margin-top: 90px;
@@ -42,7 +55,7 @@ img{
    background-color:#7a4579;
    padding: 10px;
    width: 150px;
-   border-radius: 12px;
+   border-radius: 18px;
 }
 b{
     color: whitesmoke;
@@ -99,10 +112,11 @@ nav :hover{
   @media (max-width:130vh){
     body{
        
-        width: 120vh;
-        height: 200vh;
+        width: 100vh;
+        height: 280vh;
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
     }
-}
+  }    
 }

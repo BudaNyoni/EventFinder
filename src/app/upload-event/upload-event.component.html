@@ -1,9 +1,10 @@
-<div *ngFor="let i of person | async">
 <body id="bg" class="animated fadeInDown delay-2s"  >
+
+    <div *ngFor="let i of person | async">
  <nav class="animated slideInDown delay-2s">
-    <a routerLink="/log-in" class="animated bounce delay-2s">Log-in</a>
+    <!-- <a routerLink="/log-in" class="animated bounce delay-2s">Log-in</a> -->
     <a routerLink="/upload-event" class="animated bounce delay-2s">home</a>
-    <a (click)="logOut()" class="animated bounce delay-2s">Log-Out</a>
+    <!-- <a (click)="logOut()" class="animated bounce delay-2s">Log-Out</a> -->
    <a (click)="test(i.CompanyName)" class="animated bounce delay-2s">Events</a>
  </nav>  
   <router-outlet></router-outlet> 
@@ -24,8 +25,13 @@
     <p></p>
   
   <form >
+      <div class="logo" align = "center" >
+          <img src="../../assets/fireworks (1).png" >
+          
+          <!-- <h1>Events Finder</h1> -->
+          </div>
       <div align="center">
-          <h2>Please Upload the Event Below</h2>
+          <h1 class="header">Please Upload Your Event Below</h1>
         </div>
         <br>
     <div class="contain">
@@ -54,8 +60,8 @@
   <br>
   <br>
   <div align = "center" >
-  <button  class="butt" (click)="upload(eventName.value, eventDesc.value, date.value, startTime.value, endTime.value,location.value, fee.value, i.CompanyName, enddate.value , i.img)" >
-    <b> View Event</b>
+  <button  class="butt" (click)="upload(eventName.value, eventDesc.value, date.value, startTime.value, endTime.value,location.value, fee.value, i.CompanyName, enddate.value , i.img, i.cellno)" >
+    <b> Add Event</b>
   </button>
   </div>
 
@@ -76,8 +82,8 @@
 
   </footer>
    -->
-    
+    </div>
   </body>
-</div>
+
 
     

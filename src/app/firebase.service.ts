@@ -23,7 +23,7 @@ export class FirebaseService {
   }
  
   getAuthState(){
-    //this.authen.auth.signOut();
+    // this.authen.auth.signOut();
     return new Promise ((accpt, rej) =>{ 
       this.authen.auth.onAuthStateChanged(user =>{
         if (user){
@@ -74,7 +74,7 @@ export class FirebaseService {
     console.log('exit')
     this.authen.auth.signOut();
   }
-  
+
   addEventPicture(url){
     return new Promise ((accpt, rej) =>{
       var name = 'name'
@@ -97,7 +97,7 @@ export class FirebaseService {
      })
   }
 
-  addEvent(name,desc, img, date, startTIme, endTIme, location, fee, busName, enddate, img2){
+  addEvent(name,desc, img, date, startTIme, endTIme, location, fee, busName, enddate, img2, cellno){
     this.currentName = busName;
     return new Promise ((accpt, rej)=>{
           var dbPath = 'events/' + this.currentName; 
@@ -114,7 +114,8 @@ export class FirebaseService {
             img: img,
             hostImg : img2,
             endDate : enddate,
-            comments : 0
+            comments : 0,
+            cellno: cellno
           })  
        
           accpt('added')      

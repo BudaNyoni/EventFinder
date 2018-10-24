@@ -29,13 +29,32 @@ body{
     background-image:linear-gradient(rgba(51, 38, 38, 0.568), rgba(32, 32, 32, 0.616),rgba(155, 155, 155, 0.712)),url("../../assets/img_0379.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    font: 14px 20px , arial, san serif;
     position: center;
     height:200vh;
     margin: 0; 
     padding: 0;
   
 
+}
+img{
+    margin-bottom: 30px;
+    height: 90px;
+    width: 90px;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow:  2px 5px 3px black;
+    background-color: #7a4579;
+}
+.logo{
+    margin-bottom: 10px;
+}
+.header{
+    border-bottom: 6px solid #7a4579;
+    border-style: inset 2px 1px 2px;
+    font-size: 1.5em;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .head{
     background-color: rgba(122, 110, 41, 0.705);
@@ -49,27 +68,28 @@ body{
 #sec{
     box-shadow: 2px 2px 4px 1px;
     /* border-radius: 12px; */
-    margin-left:360px;
-    margin-right: 360px;
+    margin-left:460px;
+    margin-right: 460px;
     position: relative;
     font-size: 20px;
     margin-top: 90px;
+    
     background-color: rgba(245, 245, 245, 0.822);
     /* position: fixed; */
     /* height: 90px; */
 }
 .butt{
     background-color:#7a4579;
-    padding: 15px;
+    padding: 10px;
     width: 150px;
     color: white;
-    border-radius: 12px;
+    border-radius: 18px;
  }
  button :hover{
     background-color: #7a4579;
     transition: 0.4s;
     padding: 20px;
-    box-shadow: inset 2px 2px 4px black;
+    box-shadow:  2px 2px 4px black;
 }
 footer.foot{
     border-top: 1px solid #4d4e50;
@@ -86,6 +106,7 @@ footer.foot{
     opacity: 0.95;
 }
 .contain{
+    margin-top: 30px;
     text-align: center;
  justify-content: center;
  
@@ -102,17 +123,18 @@ footer.foot{
     /* margin-top: 0 ; */
 }
 h2{
-    background-color:#7a4579;
+    /* background-color:#7a4579; */
     padding: 5px;
     border-radius: 5px; 
-    margin-left:100px;
-    color: white;
-    margin-right: 100px;
-    box-shadow: 2px 2px 4px black ;
+    /* margin-left:100px; */
+    color: black;
+    /* margin-right: 100px; */
+    /* box-shadow: 2px 2px 4px black ; */
 }
 .item1{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
+    font-size: 1em;
     width: 300px;
     margin-bottom: 3px;
     border-radius: 5px;
@@ -122,6 +144,7 @@ h2{
     /* box-shadow: 2px 2px 3px; */
     padding: 10px;
     width: 300px;
+    font-size: 1em;
     border-radius: 5px;
     position: relative;
 }
@@ -131,6 +154,7 @@ h2{
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    font-size: 1em;
     position: relative;
 }
 .item4{
@@ -138,6 +162,7 @@ h2{
     padding: 5px;
     border-radius: 5px;
     width: 300px;
+    font-size: 1em;
     position: relative;
 }
 .item6{
@@ -145,6 +170,7 @@ h2{
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    font-size: 1em;
     position: relative;
 }
 .item7{
@@ -152,6 +178,7 @@ h2{
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    font-size: 1em;
     position: relative;
 }
 .item{
@@ -159,6 +186,7 @@ h2{
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+    font-size: 1em;
     position: relative;
 }
 /* .item, a{
@@ -178,6 +206,9 @@ nav{
     text-align: center;
    
     
+}
+p{
+    font-weight: bold;
 }
 
 nav a {
@@ -203,27 +234,39 @@ nav :hover{
 @media (max-width:130vh){
 body{
    
-    width: 120vh;
+    width: 100vh;
     height: 200vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 }
 @media(max-width:120vh){
 .item1{
-    width: 160px;
+    width: 180px;
     padding: 5px;
+    padding: 5;
+    font-size: .8em;
 }
-
+.logo{
+    margin-bottom: 3px;
+}
+.contain{
+    margin-top: 10px;
+}
 .item2{
-    width: 160px;
+    width: 180px;
     padding: 5px;
+    padding: 5;
+    font-size: .8em;
 }
 
 .item3{
-    width: 160px;
+    width: 180px;
     padding: 5px;
+    padding: 5;
+    font-size: .8em;
 }
 
 /* .item4{
@@ -236,28 +279,35 @@ body{
     padding: 5px;
 } */
 .item{
-    width: 160px;
+    width: 180px;
     padding: 5;
+    font-size: .8em;
 }
 .item6{
-    width: 160px;
+    width: 180px;
     padding: 5px;
+    font-size: .8em;
 }
 .item7{
-    width: 160px;
+    width: 180px;
     padding: 5px;
+    font-size: .8em;
 }
 p{
-    font-size: 10px;
+    font-size: 15px;
 }
 #sec{
     text-align: center;
   margin-left: 100px;
-  height: 110vh;
+  height: 160vh;
   width: 130vw;
 }
 h2{
     font-size: 12px;
+}
+img{
+    height: 50px;
+    width: 50px;
 }
 }
 
